@@ -25,3 +25,13 @@ const [newTaskName, setNewTaskName] = useState();
 
 ***useEffect***
 <p> Este Hook useEffect se ejecuta cada vez si nosotros le decimos que un dato cambia</p>
+
+***Utilizando Map***
+
+`const a = [{name: 'Joe'}, {name: 'ryan'}]`
+
+<p> arroja: (2) [{...}, {...}]</p>
+
+`a.map(user => user.name == 'ryan' ? {...user, done:true} : user)`
+
+<p> arroja: (2) [{...}, {...}] 0: {name: 'Joe'} 1: {name: 'ryan', done: true} length: 2</p>
