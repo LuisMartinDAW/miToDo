@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {TaskCreator} from './components/TaskCreator.jsx';
 import './App.css';
+
+
 
 function App() {
  
@@ -17,6 +19,12 @@ function App() {
     setTasksItems([...tasksItems, {name:taskName, done:false}]);
     }
   }
+  
+useEffect(() =>{
+localStorage.setItem('tasks', JSON.stringify(tasksItems))
+}, [tasksItems])
+
+
   return (
     <div className="App">
 

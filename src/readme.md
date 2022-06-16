@@ -22,3 +22,6 @@ const [newTaskName, setNewTaskName] = useState();
 ***preventDefault()***
 
 <p> desde su evento "e" e.preventDefault(). Nos va ha servir para cancelar ese comportamiento por defecto del formulario de enviar los datos a un backend</p>
+
+***useEffect***
+<p> Este Hook useEffect se ejecuta cada vez si nosotros le decimos que un dato cambia</p>
